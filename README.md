@@ -1,47 +1,31 @@
-# Регрессионный анализ параметров рыб (Fish Measurements)
+# Fish Weight Prediction Model:
 
-Лабораторная работа №1 по введению в ИИ.
+![Fish](images/Fishlength.jpg)
 
-## Структура
+## Requirements
 
-```text
-.
-├── data/
-│   └── raw/
-│       └── Fish.csv              # Исходный датасет
-├── notebooks/
-│   └── 01-eda.ipynb              # Ноутбук с EDA, обработкой выбросов и гипотезами
-├── reports/
-│   ├── figures/                  # Сгенерированные графики с подписями
-│   │   ├── 01_target_distribution.png
-│   │   ├── 02_features_distribution.png
-│   │   ├── 03_species_count.png
-│   │   ├── 04_target_vs_features.png
-│   │   ├── 05_pairplot_by_species.png
-│   │   ├── 06_correlation_heatmap.png
-│   │   ├── 07_weight_by_species_boxplot.png
-│   │   └── 08_hypothesis_validation.png
-│   └── lab01-report.md           # Итоговый отчет (паспорт, графики, выводы, утечки)
-├── README.md                     # Описание проекта и инструкции по запуску
-└── requirements.txt              # Список зависимостей
+Hello! Welcome to the famous Tsukiji fish market of Tokyo, Japan! We came here to collect data on some of the fish they have here 
+but we didn't wake up at 5am for the tuna auction and by the time we showed up they were only left with a few species of fish. 
+We got to work and gathered measurements from a few different species of fish and want you to train a regression model to predict
+the weight of a fish using some of the features we were able to measure. We have no idea which features will be good predictors. 
 
+We will hold out 30% of the data before we hand it to you and we will use that csv for scoring.
 
-## Клонирование репрезитория
+Here's what we need from you:
+1. A function that accepts a csv path and returns the predictions of your regression model using our csv. The csv we use will contain all the columns. 
+2. Use a pipenv and scikit learn to submit the final model. You may use R for model selection. 
 
-git clone <https://github.com/fan4stic/AI_lab1_fish.git>
-cd <НАЗВАНИЕ_ПАПКИ_ПРОЕКТА>
+With this function and it's output, we will rank the students by how well their model performed on predicting weight based on naive data. 
+Your grade will be determined by ranking according to Mean-squared Error.
+If your function does not return a list of predictions or we cannot compute the accuracy of your model that it will be an automatic F. 
 
-## Создание виртуального окружения (Linux)
-python3 -m venv venv
-source venv/bin/activate
+## Used
 
-## Создание виртуального окружения (Windows)
-python -m venv venv
-.\venv\Scripts\Activate.ps1
-
-## Установка зависимостей
-pip install --upgrade pip
-pip install -r requirements.txt
-
-## Запуск работы
-jupyter lab
+*   Linear Regression
+*   Lasso Regression
+*   Random Forest
+*   Scikit Learn
+*   Python
+*   Joblib
+*   Matplotlib
+*   Pipenv
