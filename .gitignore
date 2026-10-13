@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow локальный журнал
+mlruns/
+mlartifacts/
+mlflow.db
+# Веса и промежуточные модели (финальную добавим явно позже)
+models/*.pkl
+
+# ОС / редакторы
+.DS_Store
+.idea/
+.vscode/
