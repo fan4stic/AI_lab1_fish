@@ -1,0 +1,4 @@
+size_bin,n,Length3_min,Length3_max,mae,mean_abs_residual
+large,8.0,38.3,59.7,108.62,108.62
+medium,7.0,30.6,37.3,80.88,80.88
+small,8.0,13.1,29.3,31.24,31.24
