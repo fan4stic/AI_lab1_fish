@@ -1,6 +1,10 @@
 """Обучение моделей E0–E4 с логированием в MLflow."""
 from __future__ import annotations
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="mlflow.sklearn")
+
+
 import argparse
 import hashlib
 import os
