@@ -19,3 +19,22 @@ models/*.pkl
 .DS_Store
 .idea/
 .vscode/
+
+# pytest
+.pytest_cache/
+
+# Отчёты
+reports/figures/*.png
+!reports/figures/.gitkeep
+# Скриншоты MLflow UI — коммитятся (доказательство наличия журнала)
+!reports/screenshots/
+!reports/screenshots/*.png
+
+# Данные (коммитим только учебные csv)
+data/*.csv
+!data/fish_participant.csv
+!data/fish_holdout_demo.csv
+
+# Модели (коммитим только финальную)
+models/*.joblib
+!models/best_model.joblib
