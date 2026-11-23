@@ -1,0 +1,526 @@
+{
+  "experiment": "E0_pretrained_yolov8n_coco",
+  "model": "models/yolov8n.pt",
+  "model_num_classes": 80,
+  "seed": 42,
+  "conf_threshold": 0.25,
+  "split_used": "val (test остаётся замороженным)",
+  "num_images": 10,
+  "total_gt_ppe_objects": {
+    "Mask": 1,
+    "NO-Hardhat": 4,
+    "NO-Safety Vest": 7,
+    "Person": 15,
+    "Hardhat": 10,
+    "NO-Mask": 12,
+    "Safety Vest": 8,
+    "machinery": 3,
+    "vehicle": 2
+  },
+  "total_pred_coco_objects": {
+    "person": 14,
+    "vase": 1,
+    "bicycle": 2,
+    "handbag": 4,
+    "dining table": 1,
+    "car": 1,
+    "tv": 1,
+    "couch": 1,
+    "truck": 1
+  },
+  "images": [
+    {
+      "index": 1,
+      "filename": "ppe_0657.jpg",
+      "orig_name": "Movie-on-10-31-22-at-10_08-AM_mov-22_jpg.rf.548bb1e08669d67062b4b1aab277db31.jpg",
+      "group_id": "grp_269_video_movie-on-10-31-22-at-10_08-am",
+      "size": "1620x1080",
+      "gt_ppe_classes": {
+        "Mask": 1,
+        "NO-Hardhat": 1,
+        "NO-Safety Vest": 1,
+        "Person": 1
+      },
+      "pred_coco_counts": {
+        "person": 1,
+        "vase": 1,
+        "bicycle": 2
+      },
+      "num_predictions": 4,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.8978,
+          "bbox_xyxy": [
+            321.8,
+            47.7,
+            1215.6,
+            1068.2
+          ]
+        },
+        {
+          "class_id": 75,
+          "class_name": "vase",
+          "conf": 0.6519,
+          "bbox_xyxy": [
+            1391.9,
+            519.4,
+            1442.1,
+            646.2
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "bicycle",
+          "conf": 0.4188,
+          "bbox_xyxy": [
+            228.1,
+            448.9,
+            589.9,
+            1002.9
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "bicycle",
+          "conf": 0.2795,
+          "bbox_xyxy": [
+            228.1,
+            450.6,
+            1344.0,
+            1010.2
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_01_ppe_0657.jpg"
+    },
+    {
+      "index": 2,
+      "filename": "ppe_0605.jpg",
+      "orig_name": "01261_jpg.rf.0b5e204406a5ab97806f3bdab521c211.jpg",
+      "group_id": "grp_031_scene",
+      "size": "1200x800",
+      "gt_ppe_classes": {
+        "Hardhat": 3,
+        "NO-Mask": 3,
+        "Person": 3,
+        "Safety Vest": 3
+      },
+      "pred_coco_counts": {
+        "person": 3,
+        "handbag": 4,
+        "dining table": 1
+      },
+      "num_predictions": 8,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.9516,
+          "bbox_xyxy": [
+            265.4,
+            133.2,
+            630.0,
+            794.9
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.9441,
+          "bbox_xyxy": [
+            892.0,
+            109.6,
+            1199.1,
+            792.1
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.9215,
+          "bbox_xyxy": [
+            640.4,
+            179.9,
+            898.7,
+            792.9
+          ]
+        },
+        {
+          "class_id": 26,
+          "class_name": "handbag",
+          "conf": 0.794,
+          "bbox_xyxy": [
+            1009.5,
+            275.9,
+            1199.4,
+            642.7
+          ]
+        },
+        {
+          "class_id": 26,
+          "class_name": "handbag",
+          "conf": 0.6948,
+          "bbox_xyxy": [
+            1027.7,
+            465.8,
+            1199.6,
+            636.5
+          ]
+        },
+        {
+          "class_id": 26,
+          "class_name": "handbag",
+          "conf": 0.39,
+          "bbox_xyxy": [
+            569.7,
+            569.8,
+            703.2,
+            795.7
+          ]
+        },
+        {
+          "class_id": 26,
+          "class_name": "handbag",
+          "conf": 0.3313,
+          "bbox_xyxy": [
+            717.4,
+            618.7,
+            860.6,
+            764.6
+          ]
+        },
+        {
+          "class_id": 60,
+          "class_name": "dining table",
+          "conf": 0.2777,
+          "bbox_xyxy": [
+            0.2,
+            380.2,
+            424.1,
+            794.3
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_02_ppe_0605.jpg"
+    },
+    {
+      "index": 3,
+      "filename": "ppe_0597.jpg",
+      "orig_name": "-2544-_png_jpg.rf.bbd424c2b9470ff20ff625ce05001689.jpg",
+      "group_id": "grp_008_scene",
+      "size": "415x416",
+      "gt_ppe_classes": {
+        "Hardhat": 1,
+        "NO-Mask": 1,
+        "Person": 1,
+        "Safety Vest": 1
+      },
+      "pred_coco_counts": {
+        "person": 1
+      },
+      "num_predictions": 1,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.9332,
+          "bbox_xyxy": [
+            118.3,
+            236.3,
+            239.2,
+            388.6
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_03_ppe_0597.jpg"
+    },
+    {
+      "index": 4,
+      "filename": "ppe_0646.jpg",
+      "orig_name": "image_620_jpg.rf.c08e9e8804125961962ae78a3394d1ad.jpg",
+      "group_id": "grp_205_scene",
+      "size": "800x600",
+      "gt_ppe_classes": {
+        "Hardhat": 1,
+        "NO-Hardhat": 1,
+        "NO-Mask": 1,
+        "NO-Safety Vest": 1,
+        "Person": 2,
+        "Safety Vest": 1,
+        "machinery": 1,
+        "vehicle": 1
+      },
+      "pred_coco_counts": {
+        "person": 1
+      },
+      "num_predictions": 1,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.6501,
+          "bbox_xyxy": [
+            316.2,
+            118.3,
+            352.3,
+            185.4
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_04_ppe_0646.jpg"
+    },
+    {
+      "index": 5,
+      "filename": "ppe_0702.jpg",
+      "orig_name": "youtube-179_jpg.rf.daae2adf8a9bb7586f8a3662850efa87.jpg",
+      "group_id": "grp_395_youtube_179",
+      "size": "1280x720",
+      "gt_ppe_classes": {
+        "Hardhat": 1,
+        "NO-Mask": 1,
+        "Person": 1,
+        "Safety Vest": 1,
+        "vehicle": 1
+      },
+      "pred_coco_counts": {
+        "person": 1,
+        "car": 1
+      },
+      "num_predictions": 2,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.8641,
+          "bbox_xyxy": [
+            553.4,
+            0.0,
+            1062.1,
+            712.3
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "car",
+          "conf": 0.6912,
+          "bbox_xyxy": [
+            1.6,
+            198.1,
+            1081.9,
+            713.8
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_05_ppe_0702.jpg"
+    },
+    {
+      "index": 6,
+      "filename": "ppe_0611.jpg",
+      "orig_name": "2009_004301_jpg.rf.52870185c6f40def32c646caae4aefeb.jpg",
+      "group_id": "grp_057_scene",
+      "size": "500x375",
+      "gt_ppe_classes": {
+        "NO-Hardhat": 2,
+        "NO-Mask": 2,
+        "NO-Safety Vest": 2,
+        "Person": 2
+      },
+      "pred_coco_counts": {
+        "tv": 1,
+        "person": 2,
+        "couch": 1
+      },
+      "num_predictions": 4,
+      "detections": [
+        {
+          "class_id": 62,
+          "class_name": "tv",
+          "conf": 0.7878,
+          "bbox_xyxy": [
+            129.7,
+            151.5,
+            254.6,
+            258.5
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.7805,
+          "bbox_xyxy": [
+            217.6,
+            73.3,
+            331.9,
+            302.9
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.7419,
+          "bbox_xyxy": [
+            52.1,
+            228.6,
+            336.9,
+            374.8
+          ]
+        },
+        {
+          "class_id": 57,
+          "class_name": "couch",
+          "conf": 0.6679,
+          "bbox_xyxy": [
+            75.4,
+            120.2,
+            482.5,
+            374.4
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_06_ppe_0611.jpg"
+    },
+    {
+      "index": 7,
+      "filename": "ppe_0672.jpg",
+      "orig_name": "youtube-134_jpg.rf.1fa0113d4a32206e1a2de23c52281a9e.jpg",
+      "group_id": "grp_290_youtube_131_137",
+      "size": "1280x720",
+      "gt_ppe_classes": {
+        "Hardhat": 3,
+        "NO-Mask": 3,
+        "NO-Safety Vest": 3,
+        "Person": 3
+      },
+      "pred_coco_counts": {
+        "person": 3
+      },
+      "num_predictions": 3,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.8419,
+          "bbox_xyxy": [
+            105.9,
+            295.8,
+            303.0,
+            622.7
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.7271,
+          "bbox_xyxy": [
+            326.9,
+            300.7,
+            403.2,
+            521.6
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.6536,
+          "bbox_xyxy": [
+            378.0,
+            362.7,
+            493.4,
+            561.4
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_07_ppe_0672.jpg"
+    },
+    {
+      "index": 8,
+      "filename": "ppe_0622.jpg",
+      "orig_name": "construction-4-_mp4-185_jpg.rf.dbb2382da9504be13f91d2a1efb7ac44.jpg",
+      "group_id": "grp_120_video_construction-4-",
+      "size": "1280x720",
+      "gt_ppe_classes": {
+        "machinery": 2
+      },
+      "pred_coco_counts": {
+        "truck": 1
+      },
+      "num_predictions": 1,
+      "detections": [
+        {
+          "class_id": 7,
+          "class_name": "truck",
+          "conf": 0.7838,
+          "bbox_xyxy": [
+            347.9,
+            321.9,
+            973.2,
+            698.4
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_08_ppe_0622.jpg"
+    },
+    {
+      "index": 9,
+      "filename": "ppe_0683.jpg",
+      "orig_name": "youtube-235_jpg.rf.19a4113e19dc95a64d3e59bef0e2f793.jpg",
+      "group_id": "grp_300_youtube_226_237",
+      "size": "1280x720",
+      "gt_ppe_classes": {
+        "Person": 1,
+        "Safety Vest": 1
+      },
+      "pred_coco_counts": {
+        "person": 1
+      },
+      "num_predictions": 1,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.9414,
+          "bbox_xyxy": [
+            220.2,
+            1.1,
+            879.9,
+            709.9
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_09_ppe_0683.jpg"
+    },
+    {
+      "index": 10,
+      "filename": "ppe_0666.jpg",
+      "orig_name": "ppe_0029_jpg.rf.cdfd7d2e151bd71e736a4fbe555fa4e2.jpg",
+      "group_id": "grp_274_scene",
+      "size": "600x400",
+      "gt_ppe_classes": {
+        "Hardhat": 1,
+        "NO-Mask": 1,
+        "Person": 1,
+        "Safety Vest": 1
+      },
+      "pred_coco_counts": {
+        "person": 1
+      },
+      "num_predictions": 1,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "person",
+          "conf": 0.8526,
+          "bbox_xyxy": [
+            5.5,
+            46.4,
+            403.6,
+            395.1
+          ]
+        }
+      ],
+      "saved_visualization": "reports/e0_pretrained/e0_10_ppe_0666.jpg"
+    }
+  ]
+}

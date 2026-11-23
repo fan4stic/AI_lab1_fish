@@ -1,0 +1,15 @@
+# Конфигурация эксперимента E1: Базовое решение (Раздел 4.2)
+experiment_id: E1
+description: "Базовое решение YOLOv8n (imgsz=640, epochs=50, batch=16, seed=42)"
+model: models/yolov8n.pt
+data: configs/ppe.yaml
+epochs: 50
+imgsz: 640
+batch: 16
+seed: 42
+deterministic: true
+project: runs/ppe
+name: e1-opora
+workers: 0
+patience: 50
+exist_ok: true

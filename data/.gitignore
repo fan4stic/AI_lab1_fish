@@ -1,0 +1,12 @@
+# Не коммитить крупные изображения и скачанные архивы датасета
+raw/
+processed/
+train/
+valid/
+val/
+test/
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.mp4

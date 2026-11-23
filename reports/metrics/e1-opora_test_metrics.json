@@ -1,0 +1,131 @@
+{
+  "experiment_id": "E1",
+  "name": "e1-opora",
+  "description": "Базовое решение YOLOv8n (imgsz=640, epochs=50, batch=16, seed=42)",
+  "config_path": "configs/e1_baseline.yaml",
+  "model_base": "models/yolov8n.pt",
+  "best_weights": "runs/ppe/e1-opora/weights/best.pt",
+  "device": "NVIDIA GeForce RTX 5070",
+  "seed": 42,
+  "epochs": 50,
+  "imgsz": 640,
+  "batch": 16,
+  "train_duration_sec": 559.7,
+  "eval_duration_sec": 3.88,
+  "frozen_test_sha256": "0a1ade4cc7c5d8d24af9d348423f8d547dc4c03ed009aeec4960733c7a07af89",
+  "overall_test_metrics": {
+    "precision": 0.7084,
+    "recall": 0.554,
+    "f1": 0.6217,
+    "mAP50": 0.5946,
+    "mAP50_95": 0.3575,
+    "speed_ms_per_image": {
+      "preprocess": 0.234,
+      "inference": 2.501,
+      "loss": 0.001,
+      "postprocess": 1.132
+    }
+  },
+  "per_class_test_metrics": [
+    {
+      "class_id": 0,
+      "class_name": "Hardhat",
+      "test_instances": 81,
+      "precision": 0.8511,
+      "recall": 0.6351,
+      "f1": 0.7274,
+      "ap50": 0.7021,
+      "ap50_95": 0.5034
+    },
+    {
+      "class_id": 1,
+      "class_name": "Mask",
+      "test_instances": 24,
+      "precision": 0.9572,
+      "recall": 0.8333,
+      "f1": 0.891,
+      "ap50": 0.8745,
+      "ap50_95": 0.5577
+    },
+    {
+      "class_id": 2,
+      "class_name": "NO-Hardhat",
+      "test_instances": 56,
+      "precision": 0.6151,
+      "recall": 0.5536,
+      "f1": 0.5827,
+      "ap50": 0.5594,
+      "ap50_95": 0.3316
+    },
+    {
+      "class_id": 3,
+      "class_name": "NO-Mask",
+      "test_instances": 69,
+      "precision": 0.6605,
+      "recall": 0.4638,
+      "f1": 0.5449,
+      "ap50": 0.502,
+      "ap50_95": 0.1849
+    },
+    {
+      "class_id": 4,
+      "class_name": "NO-Safety Vest",
+      "test_instances": 81,
+      "precision": 0.6356,
+      "recall": 0.4954,
+      "f1": 0.5568,
+      "ap50": 0.5775,
+      "ap50_95": 0.3135
+    },
+    {
+      "class_id": 5,
+      "class_name": "Person",
+      "test_instances": 165,
+      "precision": 0.7764,
+      "recall": 0.6424,
+      "f1": 0.7031,
+      "ap50": 0.7067,
+      "ap50_95": 0.4588
+    },
+    {
+      "class_id": 6,
+      "class_name": "Safety Cone",
+      "test_instances": 72,
+      "precision": 0.7741,
+      "recall": 0.5139,
+      "f1": 0.6177,
+      "ap50": 0.5498,
+      "ap50_95": 0.3083
+    },
+    {
+      "class_id": 7,
+      "class_name": "Safety Vest",
+      "test_instances": 55,
+      "precision": 0.7881,
+      "recall": 0.5818,
+      "f1": 0.6694,
+      "ap50": 0.6359,
+      "ap50_95": 0.3414
+    },
+    {
+      "class_id": 8,
+      "class_name": "machinery",
+      "test_instances": 69,
+      "precision": 0.7253,
+      "recall": 0.6667,
+      "f1": 0.6948,
+      "ap50": 0.7213,
+      "ap50_95": 0.4817
+    },
+    {
+      "class_id": 9,
+      "class_name": "vehicle",
+      "test_instances": 39,
+      "precision": 0.3003,
+      "recall": 0.1538,
+      "f1": 0.2035,
+      "ap50": 0.1167,
+      "ap50_95": 0.0935
+    }
+  ]
+}

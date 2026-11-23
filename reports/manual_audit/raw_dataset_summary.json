@@ -1,0 +1,276 @@
+{
+  "total_images": 717,
+  "orig_split_counts": {
+    "train": 521,
+    "valid": 114,
+    "test": 82
+  },
+  "total_boxes": 5570,
+  "empty_images": 52,
+  "invalid_boxes": 0,
+  "exact_sha256_dup_groups": 0,
+  "exact_phash_dup_groups": 9,
+  "total_unique_groups": 297,
+  "leaked_groups_in_orig_split": 25,
+  "leaked_groups_examples": {
+    "prefix:airport_inside": [
+      "train",
+      "valid"
+    ],
+    "video:autox3_mp4": [
+      "test",
+      "train",
+      "valid"
+    ],
+    "video:autox4_mp4": [
+      "train",
+      "valid"
+    ],
+    "prefix:class1": [
+      "test",
+      "train",
+      "valid"
+    ],
+    "prefix:class2": [
+      "test",
+      "train"
+    ],
+    "video:construction-1-_mp4": [
+      "train",
+      "valid"
+    ],
+    "video:construction-2-_mp4": [
+      "test",
+      "train",
+      "valid"
+    ],
+    "video:construction-3-_mp4": [
+      "train",
+      "valid"
+    ],
+    "video:construction-4-_mp4": [
+      "train",
+      "valid"
+    ],
+    "prefix:image": [
+      "test",
+      "train"
+    ],
+    "prefix:IMG_0871_MOV": [
+      "test",
+      "train"
+    ],
+    "video:IMG_0871_mp4": [
+      "test",
+      "train"
+    ],
+    "video:IMG_3094_mp4": [
+      "train",
+      "valid"
+    ],
+    "video:IMG_3100_mp4": [
+      "test",
+      "train",
+      "valid"
+    ],
+    "video:IMG_3103_mp4": [
+      "test",
+      "train",
+      "valid"
+    ]
+  },
+  "top_image_sizes": [
+    {
+      "size": "1280x720",
+      "count": 226
+    },
+    {
+      "size": "1080x1920",
+      "count": 61
+    },
+    {
+      "size": "1920x1080",
+      "count": 51
+    },
+    {
+      "size": "450x300",
+      "count": 31
+    },
+    {
+      "size": "640x480",
+      "count": 24
+    },
+    {
+      "size": "800x600",
+      "count": 20
+    },
+    {
+      "size": "1620x1080",
+      "count": 15
+    },
+    {
+      "size": "450x299",
+      "count": 13
+    },
+    {
+      "size": "2160x3840",
+      "count": 12
+    },
+    {
+      "size": "500x375",
+      "count": 11
+    }
+  ],
+  "classes": [
+    {
+      "id": 0,
+      "name": "Excavator",
+      "boxes": 166,
+      "images": 131
+    },
+    {
+      "id": 1,
+      "name": "Gloves",
+      "boxes": 296,
+      "images": 96
+    },
+    {
+      "id": 2,
+      "name": "Hardhat",
+      "boxes": 574,
+      "images": 231
+    },
+    {
+      "id": 3,
+      "name": "Ladder",
+      "boxes": 58,
+      "images": 49
+    },
+    {
+      "id": 4,
+      "name": "Mask",
+      "boxes": 202,
+      "images": 123
+    },
+    {
+      "id": 5,
+      "name": "NO-Hardhat",
+      "boxes": 402,
+      "images": 233
+    },
+    {
+      "id": 6,
+      "name": "NO-Mask",
+      "boxes": 491,
+      "images": 250
+    },
+    {
+      "id": 7,
+      "name": "NO-Safety Vest",
+      "boxes": 582,
+      "images": 306
+    },
+    {
+      "id": 8,
+      "name": "Person",
+      "boxes": 1148,
+      "images": 515
+    },
+    {
+      "id": 9,
+      "name": "SUV",
+      "boxes": 16,
+      "images": 10
+    },
+    {
+      "id": 10,
+      "name": "Safety Cone",
+      "boxes": 600,
+      "images": 72
+    },
+    {
+      "id": 11,
+      "name": "Safety Vest",
+      "boxes": 424,
+      "images": 188
+    },
+    {
+      "id": 12,
+      "name": "bus",
+      "boxes": 1,
+      "images": 1
+    },
+    {
+      "id": 13,
+      "name": "dump truck",
+      "boxes": 157,
+      "images": 120
+    },
+    {
+      "id": 14,
+      "name": "fire hydrant",
+      "boxes": 6,
+      "images": 5
+    },
+    {
+      "id": 15,
+      "name": "machinery",
+      "boxes": 45,
+      "images": 30
+    },
+    {
+      "id": 16,
+      "name": "mini-van",
+      "boxes": 7,
+      "images": 7
+    },
+    {
+      "id": 17,
+      "name": "sedan",
+      "boxes": 54,
+      "images": 25
+    },
+    {
+      "id": 18,
+      "name": "semi",
+      "boxes": 7,
+      "images": 7
+    },
+    {
+      "id": 19,
+      "name": "trailer",
+      "boxes": 15,
+      "images": 12
+    },
+    {
+      "id": 20,
+      "name": "truck and trailer",
+      "boxes": 35,
+      "images": 27
+    },
+    {
+      "id": 21,
+      "name": "truck",
+      "boxes": 7,
+      "images": 4
+    },
+    {
+      "id": 22,
+      "name": "van",
+      "boxes": 28,
+      "images": 21
+    },
+    {
+      "id": 23,
+      "name": "vehicle",
+      "boxes": 122,
+      "images": 46
+    },
+    {
+      "id": 24,
+      "name": "wheel loader",
+      "boxes": 127,
+      "images": 107
+    }
+  ]
+}

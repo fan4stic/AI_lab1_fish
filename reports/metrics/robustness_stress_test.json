@@ -1,0 +1,65 @@
+{
+  "weights": "runs/ppe/e1-opora/weights/best.pt",
+  "scenarios": [
+    {
+      "scenario": "baseline",
+      "mAP50": 0.6165,
+      "precision_conf025": 0.7505,
+      "recall_conf025": 0.5626,
+      "f1_conf025": 0.6431,
+      "critical_ppe_recall_conf025": 0.5182,
+      "tp_conf025": 400,
+      "fp_conf025": 133,
+      "fn_conf025": 311,
+      "delta_mAP50": 0.0
+    },
+    {
+      "scenario": "low_light",
+      "mAP50": 0.6143,
+      "precision_conf025": 0.7593,
+      "recall_conf025": 0.5457,
+      "f1_conf025": 0.635,
+      "critical_ppe_recall_conf025": 0.5474,
+      "tp_conf025": 388,
+      "fp_conf025": 123,
+      "fn_conf025": 323,
+      "delta_mAP50": -0.0022
+    },
+    {
+      "scenario": "overexposed",
+      "mAP50": 0.5789,
+      "precision_conf025": 0.7373,
+      "recall_conf025": 0.5288,
+      "f1_conf025": 0.6159,
+      "critical_ppe_recall_conf025": 0.4891,
+      "tp_conf025": 376,
+      "fp_conf025": 134,
+      "fn_conf025": 335,
+      "delta_mAP50": -0.0376
+    },
+    {
+      "scenario": "tilted_10deg",
+      "mAP50": 0.6041,
+      "precision_conf025": 0.7835,
+      "recall_conf025": 0.539,
+      "f1_conf025": 0.6387,
+      "critical_ppe_recall_conf025": 0.5037,
+      "tp_conf025": 380,
+      "fp_conf025": 105,
+      "fn_conf025": 325,
+      "delta_mAP50": -0.0124
+    },
+    {
+      "scenario": "partial_occlusion",
+      "mAP50": 0.4533,
+      "precision_conf025": 0.619,
+      "recall_conf025": 0.4388,
+      "f1_conf025": 0.5136,
+      "critical_ppe_recall_conf025": 0.3942,
+      "tp_conf025": 312,
+      "fp_conf025": 192,
+      "fn_conf025": 399,
+      "delta_mAP50": -0.1632
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "experiment_id": "E2",
+  "name": "e2-epochs100",
+  "description": "Гипотеза E2: увеличение числа эпох 50 -> 100 (yolov8n, imgsz=640, batch=16, seed=42)",
+  "config_path": "configs/e2_epochs100.yaml",
+  "model_base": "models/yolov8n.pt",
+  "best_weights": "runs/ppe/e2-epochs100/weights/best.pt",
+  "device": "NVIDIA GeForce RTX 5070",
+  "seed": 42,
+  "epochs": 100,
+  "imgsz": 640,
+  "batch": 16,
+  "train_duration_sec": 821.0,
+  "eval_duration_sec": 2.63,
+  "frozen_test_sha256": "0a1ade4cc7c5d8d24af9d348423f8d547dc4c03ed009aeec4960733c7a07af89",
+  "overall_test_metrics": {
+    "precision": 0.7461,
+    "recall": 0.5391,
+    "f1": 0.6259,
+    "mAP50": 0.5849,
+    "mAP50_95": 0.3477,
+    "speed_ms_per_image": {
+      "preprocess": 0.2,
+      "inference": 2.199,
+      "loss": 0.0,
+      "postprocess": 1.02
+    }
+  },
+  "per_class_test_metrics": [
+    {
+      "class_id": 0,
+      "class_name": "Hardhat",
+      "test_instances": 81,
+      "precision": 0.8988,
+      "recall": 0.7037,
+      "f1": 0.7894,
+      "ap50": 0.7152,
+      "ap50_95": 0.501
+    },
+    {
+      "class_id": 1,
+      "class_name": "Mask",
+      "test_instances": 24,
+      "precision": 0.9801,
+      "recall": 0.8333,
+      "f1": 0.9008,
+      "ap50": 0.8884,
+      "ap50_95": 0.5362
+    },
+    {
+      "class_id": 2,
+      "class_name": "NO-Hardhat",
+      "test_instances": 56,
+      "precision": 0.7623,
+      "recall": 0.5357,
+      "f1": 0.6292,
+      "ap50": 0.5808,
+      "ap50_95": 0.2756
+    },
+    {
+      "class_id": 3,
+      "class_name": "NO-Mask",
+      "test_instances": 69,
+      "precision": 0.8073,
+      "recall": 0.4251,
+      "f1": 0.5569,
+      "ap50": 0.4847,
+      "ap50_95": 0.1795
+    },
+    {
+      "class_id": 4,
+      "class_name": "NO-Safety Vest",
+      "test_instances": 81,
+      "precision": 0.7434,
+      "recall": 0.4691,
+      "f1": 0.5752,
+      "ap50": 0.5304,
+      "ap50_95": 0.3011
+    },
+    {
+      "class_id": 5,
+      "class_name": "Person",
+      "test_instances": 165,
+      "precision": 0.773,
+      "recall": 0.6,
+      "f1": 0.6756,
+      "ap50": 0.6778,
+      "ap50_95": 0.4419
+    },
+    {
+      "class_id": 6,
+      "class_name": "Safety Cone",
+      "test_instances": 72,
+      "precision": 0.7052,
+      "recall": 0.4722,
+      "f1": 0.5657,
+      "ap50": 0.4946,
+      "ap50_95": 0.3009
+    },
+    {
+      "class_id": 7,
+      "class_name": "Safety Vest",
+      "test_instances": 55,
+      "precision": 0.8153,
+      "recall": 0.6,
+      "f1": 0.6913,
+      "ap50": 0.6396,
+      "ap50_95": 0.3415
+    },
+    {
+      "class_id": 8,
+      "class_name": "machinery",
+      "test_instances": 69,
+      "precision": 0.6914,
+      "recall": 0.6232,
+      "f1": 0.6555,
+      "ap50": 0.6953,
+      "ap50_95": 0.5071
+    },
+    {
+      "class_id": 9,
+      "class_name": "vehicle",
+      "test_instances": 39,
+      "precision": 0.2839,
+      "recall": 0.1282,
+      "f1": 0.1766,
+      "ap50": 0.1428,
+      "ap50_95": 0.0919
+    }
+  ]
+}

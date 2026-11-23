@@ -1,0 +1,218 @@
+{
+  "e1-opora": {
+    "model_name": "e1-opora",
+    "weights": "runs/ppe/e1-opora/weights/best.pt",
+    "device": "NVIDIA GeForce RTX 5070",
+    "imgsz": 640,
+    "num_frames": 110,
+    "warmup_runs": 15,
+    "stages": {
+      "decode_jpeg": {
+        "mean_ms": 3.819,
+        "p50_ms": 2.573,
+        "p95_ms": 9.532,
+        "p99_ms": 11.195,
+        "min_ms": 0.507,
+        "max_ms": 58.468
+      },
+      "resize_preprocess": {
+        "mean_ms": 2.437,
+        "p50_ms": 2.201,
+        "p95_ms": 3.239,
+        "p99_ms": 3.702,
+        "min_ms": 1.265,
+        "max_ms": 19.284
+      },
+      "model_inference": {
+        "mean_ms": 7.249,
+        "p50_ms": 7.575,
+        "p95_ms": 9.506,
+        "p99_ms": 10.032,
+        "min_ms": 3.905,
+        "max_ms": 10.257
+      },
+      "postprocess_nms": {
+        "mean_ms": 2.457,
+        "p50_ms": 1.945,
+        "p95_ms": 3.763,
+        "p99_ms": 3.845,
+        "min_ms": 0.592,
+        "max_ms": 41.469
+      },
+      "end_to_end_full_pipeline": {
+        "mean_ms": 15.962,
+        "p50_ms": 14.754,
+        "p95_ms": 23.724,
+        "p99_ms": 54.242,
+        "min_ms": 7.868,
+        "max_ms": 74.31
+      },
+      "ultralytics_predict_api_no_decode": {
+        "mean_ms": 24.631,
+        "p50_ms": 11.272,
+        "p95_ms": 42.688,
+        "p99_ms": 48.274,
+        "min_ms": 6.558,
+        "max_ms": 1224.758
+      }
+    },
+    "throughput_fps": {
+      "model_core_only_fps": 138.0,
+      "end_to_end_pipeline_fps": 62.6,
+      "end_to_end_p95_guaranteed_fps": 42.2
+    },
+    "memory": {
+      "process_ram_mb": 1558.8,
+      "gpu_vram_peak_allocated_mb": 73.8,
+      "gpu_vram_peak_reserved_mb": 116.0
+    },
+    "false_alarms": {
+      "conf_0.25": {
+        "total_fp_on_test": 129,
+        "fp_per_100_frames_all_classes": 117.27,
+        "fp_per_100_frames_critical_ppe": 28.18,
+        "fp_per_100_frames_no_hardhat": 15.45,
+        "fp_per_100_frames_no_safety_vest": 12.73,
+        "fp_per_min_at_5fps_critical_ppe": 84.5,
+        "fp_by_class_on_test": {
+          "Person": 33,
+          "machinery": 19,
+          "NO-Hardhat": 17,
+          "NO-Safety Vest": 14,
+          "NO-Mask": 13,
+          "vehicle": 11,
+          "Hardhat": 10,
+          "Safety Vest": 6,
+          "Safety Cone": 6
+        }
+      },
+      "conf_0.50": {
+        "total_fp_on_test": 49,
+        "fp_per_100_frames_all_classes": 44.55,
+        "fp_per_100_frames_critical_ppe": 10.91,
+        "fp_per_100_frames_no_hardhat": 5.45,
+        "fp_per_100_frames_no_safety_vest": 5.45,
+        "fp_per_min_at_5fps_critical_ppe": 32.7,
+        "fp_by_class_on_test": {
+          "machinery": 14,
+          "Person": 8,
+          "NO-Hardhat": 6,
+          "NO-Safety Vest": 6,
+          "Hardhat": 5,
+          "vehicle": 5,
+          "Safety Vest": 3,
+          "NO-Mask": 2
+        }
+      }
+    }
+  },
+  "e2-epochs100": {
+    "model_name": "e2-epochs100",
+    "weights": "runs/ppe/e2-epochs100/weights/best.pt",
+    "device": "NVIDIA GeForce RTX 5070",
+    "imgsz": 640,
+    "num_frames": 110,
+    "warmup_runs": 15,
+    "stages": {
+      "decode_jpeg": {
+        "mean_ms": 4.027,
+        "p50_ms": 3.159,
+        "p95_ms": 8.711,
+        "p99_ms": 14.007,
+        "min_ms": 0.517,
+        "max_ms": 52.988
+      },
+      "resize_preprocess": {
+        "mean_ms": 2.517,
+        "p50_ms": 2.465,
+        "p95_ms": 3.595,
+        "p99_ms": 3.952,
+        "min_ms": 1.373,
+        "max_ms": 4.941
+      },
+      "model_inference": {
+        "mean_ms": 7.653,
+        "p50_ms": 7.686,
+        "p95_ms": 9.787,
+        "p99_ms": 10.89,
+        "min_ms": 3.666,
+        "max_ms": 11.459
+      },
+      "postprocess_nms": {
+        "mean_ms": 2.045,
+        "p50_ms": 1.919,
+        "p95_ms": 3.394,
+        "p99_ms": 3.679,
+        "min_ms": 0.467,
+        "max_ms": 3.864
+      },
+      "end_to_end_full_pipeline": {
+        "mean_ms": 16.242,
+        "p50_ms": 15.258,
+        "p95_ms": 21.668,
+        "p99_ms": 30.129,
+        "min_ms": 8.161,
+        "max_ms": 65.721
+      },
+      "ultralytics_predict_api_no_decode": {
+        "mean_ms": 11.912,
+        "p50_ms": 11.627,
+        "p95_ms": 14.609,
+        "p99_ms": 18.17,
+        "min_ms": 5.21,
+        "max_ms": 37.704
+      }
+    },
+    "throughput_fps": {
+      "model_core_only_fps": 130.7,
+      "end_to_end_pipeline_fps": 61.6,
+      "end_to_end_p95_guaranteed_fps": 46.2
+    },
+    "memory": {
+      "process_ram_mb": 1566.9,
+      "gpu_vram_peak_allocated_mb": 98.5,
+      "gpu_vram_peak_reserved_mb": 136.0
+    },
+    "false_alarms": {
+      "conf_0.25": {
+        "total_fp_on_test": 140,
+        "fp_per_100_frames_all_classes": 127.27,
+        "fp_per_100_frames_critical_ppe": 19.09,
+        "fp_per_100_frames_no_hardhat": 9.09,
+        "fp_per_100_frames_no_safety_vest": 10.0,
+        "fp_per_min_at_5fps_critical_ppe": 57.3,
+        "fp_by_class_on_test": {
+          "Person": 33,
+          "machinery": 28,
+          "vehicle": 16,
+          "NO-Mask": 16,
+          "Safety Cone": 13,
+          "NO-Safety Vest": 11,
+          "NO-Hardhat": 10,
+          "Hardhat": 6,
+          "Safety Vest": 6,
+          "Mask": 1
+        }
+      },
+      "conf_0.50": {
+        "total_fp_on_test": 60,
+        "fp_per_100_frames_all_classes": 54.55,
+        "fp_per_100_frames_critical_ppe": 11.82,
+        "fp_per_100_frames_no_hardhat": 4.55,
+        "fp_per_100_frames_no_safety_vest": 7.27,
+        "fp_per_min_at_5fps_critical_ppe": 35.5,
+        "fp_by_class_on_test": {
+          "machinery": 13,
+          "Person": 12,
+          "NO-Safety Vest": 8,
+          "vehicle": 7,
+          "NO-Hardhat": 5,
+          "Safety Cone": 5,
+          "Safety Vest": 4,
+          "NO-Mask": 4,
+          "Hardhat": 2
+        }
+      }
+    }
+  }
+}

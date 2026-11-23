@@ -1,0 +1,17 @@
+# Конфигурация эксперимента E2: Одна проверяемая гипотеза (Раздел 4.3)
+# Единственный изменённый основной фактор: epochs 50 -> 100
+experiment_id: E2
+description: "Гипотеза E2: увеличение числа эпох 50 -> 100 (yolov8n, imgsz=640, batch=16, seed=42)"
+hypothesis: "В E1 потери на валидации продолжали снижаться до 50-й эпохи; увеличение до 100 эпох повысит mAP@0.5, mAP@0.5:0.95 и Recall без роста задержки инференса."
+model: models/yolov8n.pt
+data: configs/ppe.yaml
+epochs: 100
+imgsz: 640
+batch: 16
+seed: 42
+deterministic: true
+project: runs/ppe
+name: e2-epochs100
+workers: 0
+patience: 100
+exist_ok: true
